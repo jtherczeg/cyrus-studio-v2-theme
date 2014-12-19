@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Design Fanatic Bootstrap Form Demo</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+   <form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend><h2 class="text-center">Web Design Fanatic Bootstrap Form</h2></legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Name">Name</label>  
+  <div class="col-md-4">
+  <input id="Name" name="Name" placeholder="Your Name" class="form-control input-md" type="text">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Email">Email</label>  
+  <div class="col-md-4">
+  <input id="Email" name="Email" placeholder="Your Email Address" class="form-control input-md" required="" type="text">
+    
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Subject">Subject</label>
+  <div class="col-md-4">
+    <select id="Subject" name="Subject" class="form-control">
+      <option value="">Business Inquiry</option>
+      <option value="">General Questions</option>
+      <option value="">Feedback/Comments</option>
+      <option value="">Employment Inquiry</option>
+      <option value="">Other</option>
+    </select>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Message">Message</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="Message" name="Message">How can we help you?</textarea>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Send">Send</label>
+  <div class="col-md-4">
+    <button id="Send" name="Send" class="btn btn-info">Send</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

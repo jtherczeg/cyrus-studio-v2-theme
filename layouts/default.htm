@@ -1,0 +1,85 @@
+description = "Default Layout"
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="{{ this.page.meta_description }}" />
+<meta name="keywords" content="{{ this.page.meta_keywords }}" />
+<meta name="author" content="{{ this.page.meta_author }}" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>{{ this.page.title }}</title>
+<!-- Google fonts -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+{% styles %}
+<link href="{{ [
+            'assets/vendor/bootstrap/css/bootstrap.min.css',
+            'assets/vendor/animate/animate.css',
+            'assets/vendor/animate/set.css',
+			'assets/vendor/gallery/blueimp-gallery.min.css',
+			'assets/css/style.css']|theme }}" rel="stylesheet">
+<!-- font awesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- favicon -->
+<link rel="shortcut icon" href="{{ 'assets/images/favicon.ico'|theme }}" type="image/x-icon">
+<link rel="icon" href="{{ 'assets/images/favicon.ico'|theme }}" type="image/x-icon">
+</head>
+<body>
+<div class="topbar animated fadeInLeftBig"></div>
+
+<div class="navbar-wrapper">
+	{% partial "nav" %}
+</div>
+
+<div id="works" class=" clearfix grid"> 
+	{% partial "works" %}
+</div>
+
+<div id="about" class="container spacer about">
+	{% partial "intro" %}
+</div>
+
+<div class="highlight-info">
+	{% partial "about" %}
+</div>
+
+<div id="partners" class="container spacer ">
+	{% partial "clients" %}
+</div>
+
+<div id="contact" class="spacer">
+	{% partial "contacts" %}
+</div>
+
+<div class="footer text-center spacer">
+	{% partial "footer" %}
+</div>
+
+<a href="#works" class="gototop "><i class="fa fa-angle-up  fa-3x"></i></a>
+
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title">Title</h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->    
+</div>
+
+<!-- Scripts -->
+<script src="{{ 'assets/js/jquery.js'|theme }}"></script>
+<script src="{{ 'assets/js/respond.js'|theme }}"></script>
+<script src="{{ 'assets/js/script.js'|theme }}"></script>
+<script src="{{ 'assets/js/touchSwipe.min.js'|theme }}"></script>
+<script src="{{ 'assets/js/wow.min.js'|theme }}"></script>
+<script src="{{ 'assets/vendor/bootstrap/js/bootstrap.js'|theme }}"></script>
+<script src="{{ 'assets/vendor/gallery/jquery.blueimp-gallery.min.js'|theme }}"></script>
+{% framework extras %}
+{% scripts %}             
+         
+</body>
+</html>
