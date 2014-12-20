@@ -7,6 +7,7 @@ Features
 --------
 * Responsive design
 * High overall quality
+* Sticky header
 * Lightbox image gallery slideshow
 * Animated testimonials slider
 
