@@ -1,6 +1,8 @@
 Cyrus Studio v2 - based on The Bootstrap Themes' HTML theme
 ===============
 
+![Screenshot](https://raw.githubusercontent.com/jtherczeg/cyrus-studio-v2-theme/master/assets/images/theme-preview.png)
+
 Cyrus Studio v2 is a free, responsive one page portfolio theme, using the Bootstrap 3 framework, converted from a HTML theme for OctoberCMS, without any 3rd party dependencies. Best suitable for corporate homepages with client testimonials and introducing the team members.
 
 Features
